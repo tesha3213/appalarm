@@ -23,6 +23,7 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/round_button_white"
         android:padding="5dp"
+        android:layout_marginTop="10dp"
         android:text="Tắt Luôn"
         android:textColor="#ffffff" />
 
@@ -32,6 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnStop"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         android:text="Dậy Đi Học"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#ffffff" />

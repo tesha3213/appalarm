@@ -1,5 +1,6 @@
 package com.example.dande.alarm;
 
+import android.content.Intent;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -64,6 +65,8 @@ public class AlarmFragment extends MyFragment {
             @Override
             public void onClick(View view) {
                 //Khi click vào nút add thì start cái AddAlarmActivty ở đây
+                Intent intent = new Intent(getActivity(), AddAlarmActivity.class);
+                startActivity(intent);
 
             }
         });
