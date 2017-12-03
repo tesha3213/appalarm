@@ -42,6 +42,7 @@ public class StopwatchFragment extends MyFragment{
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_stopwatch_fragment, null);
+        final int[] number = {1};
 
         btnStart = (Button) view.findViewById(R.id.btnStart);
         btnPause = (Button) view.findViewById(R.id.btnPause);
@@ -74,6 +75,8 @@ public class StopwatchFragment extends MyFragment{
                 View addView = inflater.inflate(R.layout.row,null);
                 TextView txtValue = (TextView)addView.findViewById(R.id.txtContent);
                 txtValue.setText(txtTimer.getText());
+                TextView txtNumber = (TextView)addView.findViewById(R.id.txtValue);
+                txtNumber.setText(String.valueOf(number[0]++));
                 finalContainer.addView(addView);
             }
         });
